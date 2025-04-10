@@ -51,7 +51,7 @@ html_form = """
 </head>
 <body>
     <h2>Введите данные</h2>
-    <form method="post">
+    </p><form method="post">
         Качество продукта: <input name="p1" type="number" min="1" max="5" required><br>
         Качество обратной связи: <input name="p2" type="number" min="1" max="5" required><br>
         Результативность: <input name="p3" type="number" min="1" max="5" required><br>

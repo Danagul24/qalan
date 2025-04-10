@@ -44,7 +44,7 @@ html_form = """
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        h2, h3 {
+        h3 {
             text-align: center;
         }
     </style>

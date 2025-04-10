@@ -9,9 +9,9 @@ html_form = """
 <body>
     <h2>Введите данные</h2>
     <form method="post">
-        p1: <input name="Качество продукта:" type="number" min="1" max="5" required><br>
-        p2: <input name="Качество обратной связи:" type="number" min="1" max="5" required><br>
-        p3: <input name="Результативность:" type="number" min="1" max="5" required><br>
+        Качество продукта: <input name="p1" type="number" min="1" max="5" required><br>
+        Качество обратной связи: <input name="p2" type="number" min="1" max="5" required><br>
+        Результативность: <input name="p3" type="number" min="1" max="5" required><br>
         NPS (1-10 или "не смогу оценить"): <input name="nps" required><br>
         <input type="submit" value="Рассчитать">
     </form>

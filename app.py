@@ -52,7 +52,7 @@ html_form = """
     <div class="form-container">
         <h2>Введите данные</h2>
         <form method="post">
-            NPS (0-10 или "не смогу оценить"):<br> <input name="nps" type="text" required><br>
+            NPS (1-10 или "не смогу оценить"):<br> <input name="nps" type="text" required><br>
             p1: <input name="p1" type="number" min="1" max="5" required><br>
             p2: <input name="p2" type="number" min="1" max="5" required><br>
             p3: <input name="p3" type="number" min="1" max="5" required><br>

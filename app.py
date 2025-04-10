@@ -44,13 +44,13 @@ html_form = """
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        h3 {
+        h2, h3 {
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h3>Введите данные</h3>
+    <h2>Введите данные</h2>
     <form method="post">
         Качество продукта: <input name="p1" type="number" min="1" max="5" required><br>
         Качество обратной связи: <input name="p2" type="number" min="1" max="5" required><br>

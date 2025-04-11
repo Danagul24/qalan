@@ -10,8 +10,6 @@ html_form = """
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            height: 120vh;
             margin: 0;
             display: flex;
             justify-content: center;

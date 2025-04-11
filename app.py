@@ -11,7 +11,7 @@ html_form = """
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
-            height: 120vh;
+            height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -44,13 +44,15 @@ html_form = """
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
-        
+        h2, h3 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <h2>Введите данные</h2>
     <form method="post">
-        NPS (1-10 или "не смогу оценить"): <input name="nps" required><br>
+        NPS (1-10 или "не смогу оценить"):<br> <input name="nps" type="text" required><br>
         Качество продукта: <input name="p1" type="number" min="1" max="5" required><br>
         Качество обратной связи: <input name="p2:" type="number" min="1" max="5" required><br>
         Результативность: <input name="p3" type="number" min="1" max="5" required><br>
@@ -58,9 +60,9 @@ html_form = """
     </form>
     {% if result %}
         <h3>Результат:</h3>
-        <p>NPS: {{ nps }}</p>
-        <p>CSI: {{ csi }}</p>
-        <p>Вывод: {{ result }}</p>
+            <p><strong>NPS:</strong> {{ nps }}</p>
+            <p><strong>CSI:</strong> {{ csi }}</p>
+            <p><strong>Вывод:</strong> {{ result }}</p>
     {% endif %}
 </body>
 </html>
